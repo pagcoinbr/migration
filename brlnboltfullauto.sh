@@ -271,6 +271,7 @@ EOF'
   chmod 600 $LN_DDIR/password.txt
   sudo systemctl enable lnd
   sudo systemctl start lnd
+  fi
   }
 
 install_bitcoind() {

@@ -269,7 +269,6 @@ EOF'
   done
   echo "$password" > $LN_DDIR/password.txt
   chmod 600 $LN_DDIR/password.txt
-  sudo systemctl enable lnd
   fi
   }
 

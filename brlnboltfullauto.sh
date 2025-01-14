@@ -673,10 +673,6 @@ manage_bitcoin_node() {
 }
 
 main() {
-read -p "Digite a senha para ThunderHub: " senha
-read -p "Digite o nome do seu Nó (NÃO USE ESPAÇO!): " "alias"
-read -p "Digite o bitcoind.rpcuser(BRLN): " "bitcoind_rpcuser"
-read -p "Digite o bitcoind.rpcpass(BRLN): " bitcoind_rpcpass
 read -p "Escolha sua senha do Bitcoin Core: " rpcpsswd
     update_and_upgrade
     create_main_dir
@@ -686,10 +682,6 @@ read -p "Escolha sua senha do Bitcoin Core: " rpcpsswd
     download_lnd
     configure_lnd
     create_lnd_service
-    install_nodejs
-    install_bos
-    install_thunderhub
-    install_lndg
 }
 
 menu() {
@@ -706,7 +698,7 @@ menu() {
   echo "📝 Escolha uma opção:"
   echo "   1- Instalação do BRLN Bolt (Tor + LND + BTCd + Ferramentas)"
   echo "   2- Alterne Bitcoin Local/Remoto"
-  echo "   3- Instalar Bitcoin Core (Tor + BTCd)"
+  echo "   3- Após a migração, instale os programas de administração do Nó (LNDG, Thunderhub e balance of satoshis)"
   echo "   0- Sair"
   echo
   read -p "👉 Digite sua escolha: " option
@@ -720,12 +712,12 @@ menu() {
       manage_bitcoin_node
       ;;
     3)
-      read -p "Escolha sua senha do Bitcoin Core: " rpcpsswd
+      read -p "Digite a senha para ThunderHub: " senha
       update_and_upgrade
-      create_main_dir
-      configure_ufw
-      install_tor
-      install_bitcoind
+      install_nodejs
+      install_bos
+      install_thunderhub
+      install_lndg
       ;;
     0)
       echo "👋 Saindo... Até a próxima!"

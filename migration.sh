@@ -683,11 +683,12 @@ read -p "Escolha sua senha do Bitcoin Core: " rpcpsswd
 }
 
 menu() {
-  echo "🌟 Bem-vindo à instalação de node Lightning personalizado da BRLN! 🌟"
+  echo "🌟 Bem-vindo ao assistente de migração de node Lightning personalizado da BRLN! 🌟"
   echo
-  echo "⚡ Este script instalará:"
+  echo "⚡ Primeiro instale a opção 1:"
   echo "  🛠️ Nó Lightning Standalone"
   echo "  🏗️ Bitcoin Core"
+  echo "  Depois de finalizar a migração instale a opção 3:
   echo "  🖥️ Ferramentas de administração:"
   echo "    - ThunderHub"
   echo "    - Balance of Satoshis (BOS)"

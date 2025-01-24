@@ -688,10 +688,10 @@ menu() {
   echo "⚡ Primeiro instale a opção 1:"
   echo "  🛠️ Nó Lightning Standalone"
   echo "  🏗️ Bitcoin Core"
-  echo "  Depois de finalizar a migração instale a opção 3:
+  echo "  Depois de finalizar a migração instale a opção 3:"
   echo "  🖥️ Ferramentas de administração:"
   echo "    - ThunderHub"
-  echo "    - Balance of Satoshis (BOS)"
+  echo "    - Balance of Satoshis - bos"
   echo "    - LNDG"
   echo
   echo "📝 Escolha uma opção:"
